@@ -25,3 +25,15 @@ header {
   gap: 2rem;
   margin-bottom: 3rem;
 }
+
+h1 {
+   text-align: center;
+   font-family: "Oxanium";
+   font-size: 2.5rem;
+   line-height: 100%;
+   color: #dae4f2;
+}
+
+h1 div {
+   color: #6F9DE2;
+}
