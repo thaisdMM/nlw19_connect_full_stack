@@ -1,6 +1,26 @@
 //capturar o envio dos dados do formulário
 
 const app = document.getElementById("app");
+//array, vertor (armazena qualquer valor)
+const users = [
+   {
+      email: 'teste@teste.com',
+      phone: '9999999999',
+      ref: 100,
+      refBy: null
+   },
+   {
+      email: 'thais@thais.com',
+      phone: '9999999999',
+      ref: 200,
+      refBy: 100
+   }  
+]
+
+const getUser = (userData) => {
+   return users.find(() => {})
+
+}
 
 const formAction = () => {
   const form = document.getElementById("form");
