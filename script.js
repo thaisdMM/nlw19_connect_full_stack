@@ -1,5 +1,8 @@
 //capturar o envio dos dados do formulário
 
+const app = document.getElementById("app")
+
+//arrow function
 const startApp = () => {
   const content = `
    <form>
@@ -9,6 +12,8 @@ const startApp = () => {
          Confirmar
       </button>
    </form>
-   `;
-}; //arrow function
+   `
+
+   app.innerHTML = content //innerHTML> saber o que tem dentro ou atribuir outro valor lá para dentro
+};
 startApp(); //executada assim que o app começar
