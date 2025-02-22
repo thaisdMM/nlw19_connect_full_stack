@@ -7,7 +7,6 @@ const formAction = () => {
   //ordem de eventos
   form.onsubmit = (event) => {
     event.preventDefault(); //preventDefault> não faça o padrão> nesse caso era enviar o formulário quando clicasse em confirmar porque dá erro(não está configurado ainda)
-    alert("clicou");
   };
 };
 
