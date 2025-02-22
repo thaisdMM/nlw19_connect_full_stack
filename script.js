@@ -23,6 +23,12 @@ const getUser = (userData) => {
   });
 };
 
+const showInvite = (userData) => {
+   app.innerHTML = `
+   `
+
+}
+
 const formAction = () => {
   const form = document.getElementById("form");
   //ordem de eventos
@@ -37,8 +43,17 @@ const formAction = () => {
     };
 
     const user = getUser(userData);
-    console.log(user)
-  };
+   //encontrou o usuário - ir para pagina de convite
+    if(user) {
+      showInvite(user)
+
+
+   //nao encontrou o usuário - criar um novo usário e depois ir para página de convite
+    }else { 
+
+    }
+   
+   };
 };
 
 //arrow function
