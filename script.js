@@ -1,20 +1,26 @@
 //capturar o envio dos dados do formulário
 
 const app = document.getElementById("app");
-//array, vertor (armazena qualquer valor)
+//array, vertor, lista (armazena qualquer valor)
 const users = [
   {
-    email: "teste@teste.com",
+    email: "test@test.com",
     phone: "9999999999",
     ref: 100,
     refBy: null,
   },
   {
-    email: "thais@thais.com",
+    email: "tust@tust.com",
     phone: "9999999999",
     ref: 200,
     refBy: 100,
   },
+  {
+   email: "tost@tost.com",
+   phone: "9999999999",
+   ref: 300,
+   refBy: 100,
+ },
 ];
 
 const getUser = (userData) => {
@@ -23,13 +29,20 @@ const getUser = (userData) => {
   });
 };
 
+const getTotalSubscribers = (userData) => {
+   const subs = users.filter((user) => {
+      return user.refBy == userData.ref
+   })
+   return subs.length
+}
+
 const showInvite = (userData) => {
    app.innerHTML = `
    <input type="text" id="link" value="https://evento.com?ref=${userData.ref}" disabled>
 
 <div id="stats">
    <h4>
-      80
+      ${getTotalSubscribers(userData)}
    </h4>
    <p>
       Inscrições feitas
