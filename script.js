@@ -3,24 +3,25 @@
 const app = document.getElementById("app");
 //array, vertor (armazena qualquer valor)
 const users = [
-   {
-      email: 'teste@teste.com',
-      phone: '9999999999',
-      ref: 100,
-      refBy: null
-   },
-   {
-      email: 'thais@thais.com',
-      phone: '9999999999',
-      ref: 200,
-      refBy: 100
-   }  
-]
+  {
+    email: "teste@teste.com",
+    phone: "9999999999",
+    ref: 100,
+    refBy: null,
+  },
+  {
+    email: "thais@thais.com",
+    phone: "9999999999",
+    ref: 200,
+    refBy: 100,
+  },
+];
 
 const getUser = (userData) => {
-   return users.find(() => {})
-
-}
+  return users.find((user) => {
+    return user.email == userData.email;
+  });
+};
 
 const formAction = () => {
   const form = document.getElementById("form");
@@ -28,12 +29,15 @@ const formAction = () => {
   form.onsubmit = (event) => {
     event.preventDefault(); //preventDefault> não faça o padrão> nesse caso era enviar o formulário quando clicasse em confirmar porque dá erro(não está configurado ainda)
 
-    const formData = new FormData(form)
+    const formData = new FormData(form);
     //criando um objeto
     const userData = {
       email: formData.get("email"),
-      phone: formData.get("phone")
-    }
+      phone: formData.get("phone"),
+    };
+
+    const user = getUser(userData);
+    console.log(user)
   };
 };
 
