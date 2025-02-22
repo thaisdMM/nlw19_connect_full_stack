@@ -91,6 +91,12 @@ const formAction = () => {
   };
 };
 
+const updateImageLinks = () => {
+  document.querySelectorAll("img").forEach((img) => {
+    img.src = `https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/${img.src}`;
+  });
+};
+
 //arrow function
 const startApp = () => {
   const content = `
@@ -103,8 +109,9 @@ const startApp = () => {
    </form>
    `;
 
-  app.innerHTML = content; //innerHTML> saber o que tem dentro ou atribuir outro valor lá para dentro
-
+  app.innerHTML = content //innerHTML> saber o que tem dentro ou atribuir outro valor lá para dentro
+  
+  updateImageLinks()
   formAction();
 };
 
