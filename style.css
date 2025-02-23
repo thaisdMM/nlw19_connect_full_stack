@@ -85,3 +85,40 @@ h2 {
   background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/radio.svg")
     no-repeat center;
 }
+
+p {
+   font-size: 0.85rem;
+   line-height: 160%;
+
+   color: #95A1B1;
+}
+
+.registration h2 {
+   margin-bottom: 1.5rem;
+}
+
+form {
+   display: grid;
+   gap: 1.5rem;
+}
+.input-wrapper {
+   display: grid;
+   gap: 0.75rem;
+}
+
+.input-group {
+
+}
+
+input {
+   background: none;
+   border: none;
+   width: 100%;
+   font-size: 1rem;
+   color: #e1e1e6;
+}
+
+input::placeholder {
+   line-height: 160%;
+   color: #6F7D90;
+}
