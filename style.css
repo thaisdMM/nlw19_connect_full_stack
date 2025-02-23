@@ -117,12 +117,17 @@ form {
    border-radius: 10px;
 }
 
+.input-group:focus-within {
+   outline: 2px solid white;
+}
+
 input {
    background: none;
    border: none;
    width: 100%;
    font-size: 1rem;
    color: #e1e1e6;
+   outline: none;
 }
 
 input::placeholder {
