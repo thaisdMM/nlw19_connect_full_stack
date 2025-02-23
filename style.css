@@ -57,3 +57,10 @@ section {
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
+
+h2 {
+   font-family: 'Oxanium';
+   font-size: 1.25rem;
+   line-height: 100%;
+   color: #C8D0DA;
+}
