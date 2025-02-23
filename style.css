@@ -107,7 +107,14 @@ form {
 }
 
 .input-group {
-
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   height: 3rem;
+   border: 1px solid #21252c;
+   background-color: #13161B;
+   padding: 0 1rem; /*2 informações primeira(0) é o eixo y(cima e baixo) e o a segunda eixo x(laterais)*/
+   border-radius: 10px;
 }
 
 input {
