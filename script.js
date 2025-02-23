@@ -65,6 +65,7 @@ const showInvite = (userData) => {
    </p>
 </section>
    `;
+   app.setAttribute('class', 'page-invite')
    updateImageLinks()
 };
 
@@ -167,10 +168,11 @@ const startApp = () => {
 
   app.innerHTML = content; //innerHTML> saber o que tem dentro ou atribuir outro valor lá para dentro
 
+  app.setAttribute('class', 'page-start')
   updateImageLinks();
   formAction();
 };
 
 startApp(); //executada assim que o app começar - comentou para construir o html
 
-document.getElementById("logo").onclick = () => startApp();
+document.querySelector("header").onclick = () => startApp();
