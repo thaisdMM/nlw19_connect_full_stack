@@ -136,7 +136,7 @@ const startApp = () => {
 
       </section>
 
-      <sections class="registration">
+      <section class="registration">
          <h2>Iscrição</h2>
 
          <form id="form">

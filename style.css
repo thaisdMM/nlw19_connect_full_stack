@@ -27,13 +27,33 @@ header {
 }
 
 h1 {
-   text-align: center;
-   font-family: "Oxanium";
-   font-size: 2.5rem;
-   line-height: 100%;
-   color: #dae4f2;
+  text-align: center;
+  font-family: "Oxanium";
+  font-size: 2.5rem;
+  line-height: 100%;
+  color: #dae4f2;
 }
 
 h1 div {
-   color: #6F9DE2;
+  color: #6f9de2;
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 368px;
+}
+
+section {
+  background: #191d24;
+  padding: 1.5rem;
+  border: 1px solid #21252c;
+  border-radius: 1rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
