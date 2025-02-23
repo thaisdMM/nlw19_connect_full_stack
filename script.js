@@ -51,6 +51,28 @@ const showInvite = (userData) => {
       Inscrições feitas
    </p>
 </div>
+
+ <main>
+         <h3>Inscrição confirmada!</h3>
+
+         <p>
+            Convide mais pessoas e concorra a prêmios! <br/>
+            Compartilhe o link e acompanhe as inscrições:
+         </p>
+
+         <div class="input-group">
+            <label for="link"></label> 
+            <img src="link.svg" alt="Link icon">
+            <input type="text" id="link" value="thaiscodenlw19.com" disabled>
+         </div>
+      </main>
+
+      <section class="stats">
+         <h4>30</h4>
+         <p>
+            Inscrições feitas
+         </p>
+      </section>
    `;
 };
 
@@ -156,5 +178,6 @@ Dias 15 a 17 de março | Das 18h às 21h | Online &amp; Gratuito
   formAction();
 };
 
-startApp(); //executada assim que o app começar
+//startApp(); //executada assim que o app começar - comentou para construir o html
+
 document.getElementById("logo").onclick = () => startApp();
