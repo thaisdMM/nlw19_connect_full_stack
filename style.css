@@ -52,22 +52,36 @@ section {
 }
 
 .section-header {
-  display: flex;
+  display: flex; /* coloca sobre evento ao lado do ao vivo */
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
 
 h2 {
-   font-family: 'Oxanium';
-   font-size: 1.25rem;
-   line-height: 100%;
-   color: #C8D0DA;
+  font-family: "Oxanium";
+  font-size: 1.25rem;
+  line-height: 100%;
+  color: #c8d0da;
 }
 
 .badge {
-   font-size: 0.75rem;
-   line-height: 160%;
-   font-weight: 600;
-   color: #9871F3;
+  font-size: 0.75rem;
+  line-height: 160%;
+  font-weight: 600;
+  color: #9871f3;
+
+  display: flex; /* vai colocar a img html ao lado do ao vivo */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*vai por um elemento html no CSS*/
+.badge::before {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/radio.svg")
+    no-repeat center;
 }
