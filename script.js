@@ -118,6 +118,6 @@ const startApp = () => {
   formAction();
 };
 
-startApp(); //executada assim que o app começar
+//startApp(); //executada assim que o app começar - comentou para construir o html
 
 document.getElementById("logo").onclick = () => startApp();
