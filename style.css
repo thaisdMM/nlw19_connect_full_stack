@@ -17,6 +17,7 @@ body {
   color: #e1e1e6;
   display: grid;
   place-items: center;
+  padding: 2rem 1rem;
 }
 
 header {
@@ -87,72 +88,74 @@ h2 {
 }
 
 p {
-   font-size: 0.85rem;
-   line-height: 160%;
+  font-size: 0.85rem;
+  line-height: 160%;
 
-   color: #95A1B1;
+  color: #95a1b1;
 }
 
 .registration h2 {
-   margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 form {
-   display: grid;
-   gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 .input-wrapper {
-   display: grid;
-   gap: 0.75rem;
+  display: grid;
+  gap: 0.75rem;
 }
 
 .input-group {
-   display: flex;
-   align-items: center;
-   gap: 0.5rem;
-   height: 3rem;
-   border: 1px solid #21252c;
-   background-color: #13161B;
-   padding: 0 1rem; /*2 informações primeira(0) é o eixo y(cima e baixo) e o a segunda eixo x(laterais)*/
-   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3rem;
+  border: 1px solid #21252c;
+  background-color: #13161b;
+  padding: 0 1rem; /*2 informações primeira(0) é o eixo y(cima e baixo) e o a segunda eixo x(laterais)*/
+  border-radius: 10px;
 }
 
 .input-group:focus-within {
-   outline: 2px solid white;
+  outline: 2px solid white;
 }
 
 input {
-   background: none;
-   border: none;
-   width: 100%;
-   font-size: 1rem;
-   color: #e1e1e6;
-   outline: none;
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  color: #e1e1e6;
+  outline: none;
 }
 
 input::placeholder {
-   line-height: 160%;
-   color: #6F7D90;
+  line-height: 160%;
+  color: #6f7d90;
 }
 
 button {
-   border: 0;
-   background: #2A313C;
-   color: #6F9DE2;
-   height: 3rem;   
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 1.25rem;
-   border-radius: 10px;
+  border: 0;
+  background: #2a313c;
+  color: #6f9de2;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  border-radius: 10px;
 
-   font-weight: 600;
-   font-size: 1rem;
-   line-height: 160%;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
 
-   cursor: pointer;
+  cursor: pointer;
+
+  transition: filter 0.2s;
 }
 
 button:hover {
-   filter: brightness(1.1);
+  filter: brightness(1.1);
 }
